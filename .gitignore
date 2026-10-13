@@ -1,0 +1,63 @@
+# ==========================================
+# Segredos e credenciais (NUNCA versionar)
+# ==========================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.pgpass
+pgpass.conf
+credentials*
+secrets*
+
+# ==========================================
+# Dados, dumps e logs do PostgreSQL
+# ==========================================
+*.dump
+*.backup
+*.bak
+pgdata/
+postgres-data/
+*.log
+
+# ==========================================
+# Clientes SQL (DBeaver, pgAdmin)
+# ==========================================
+.dbeaver/
+.metadata/
+pgadmin/
+*.pgadmin*
+
+# ==========================================
+# Docker
+# ==========================================
+docker-compose.override.yml
+.docker/
+volumes/
+
+# ==========================================
+# Python / Jupyter (caso alguma aula use)
+# ==========================================
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ==========================================
+# Sistema operacional e editores
+# ==========================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+# ==========================================
+# Claude Code (configurações locais)
+# ==========================================
+.claude/settings.local.json
